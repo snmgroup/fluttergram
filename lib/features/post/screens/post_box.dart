@@ -76,22 +76,24 @@ class PostBox extends StatelessWidget {
               ),
               const Text("381,232 likes"),
               RichText(
-                text: const TextSpan(children: [
-                  TextSpan(
-                      text: "championsleague",
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  TextSpan(
-                      text:
-                          " The fastest players in the #UCL on @easportsfc 24 🌪️"),
-                ]),
+                text: TextSpan(
+                    style: Theme.of(context).textTheme.bodyMedium,
+                    children: [
+                      const TextSpan(
+                          text: "championsleague",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      const TextSpan(
+                          text:
+                              " The fastest players in the #UCL on @easportsfc 24 🌪️"),
+                    ]),
               ),
               const Text(
                 "#UCLFCratings",
                 style: TextStyle(color: Color(0xffa5b2bc)),
               ),
-              const Text(
+              Text(
                 "View all 1,688 comments",
-                style: TextStyle(color: Colors.grey),
+                style: Theme.of(context).textTheme.labelMedium,
               ),
               Text(
                 "4 hours ago",
