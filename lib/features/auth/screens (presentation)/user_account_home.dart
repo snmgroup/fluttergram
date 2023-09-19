@@ -10,7 +10,7 @@ class UserAccountHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       body: Column(
         children: [
           // Replicating the sliding featue to go to different screens
@@ -20,10 +20,10 @@ class UserAccountHome extends StatelessWidget {
               controller: ScrollController(
                   initialScrollOffset: MediaQuery.of(context).size.width),
               physics: const PageScrollPhysics(),
-              children: const [
-                CameraView(),
+              children: [
+                const CameraView(),
                 UserHome(),
-                MessagingHome(),
+                const MessagingHome(),
               ]
                   .map((e) => SizedBox(
                         width: MediaQuery.of(context).size.width,

@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter_gram/common_widgets/loader.dart';
 import 'package:flutter_gram/utils/exporter.dart';
+import 'package:flutter_gram/utils/theme.dart';
 
 class FlutterGramApp extends ConsumerStatefulWidget {
   /// Our Material App holder with WidgetsBindingObserver
@@ -63,7 +64,8 @@ class _FlutterGramAppState extends ConsumerState<FlutterGramApp>
           scrollBehavior: CustomScrollBehaviorForWindows(),
           navigatorKey: Keys.navigatorkey,
           title: 'FluttergramApp',
-          theme: ThemeData.dark(useMaterial3: true),
+          theme:
+              darkTheme, // use lightTheme for light & darkTheme for dark (Feature will be added later)
           home: const Loader(),
         );
       },
