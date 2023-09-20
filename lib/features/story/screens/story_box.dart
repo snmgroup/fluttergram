@@ -9,22 +9,18 @@ class StoryBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(id);
-    return Scaffold(
-      body: SafeArea(
-        child: Stack(
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
           children: [
-            Hero(
-              tag: id,
-              child: Container(
-                height: double.infinity,
-                width: double.infinity,
-                decoration: const BoxDecoration(
-                  // color: Colors.red,
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/download.png'),
-                      fit: BoxFit.cover),
-                ),
+            Container(
+              height: double.infinity,
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                // color: Colors.red,
+                image: DecorationImage(
+                    image: AssetImage('assets/images/download.png'),
+                    fit: BoxFit.cover),
               ),
             ),
             Align(
@@ -51,16 +47,16 @@ class StoryBox extends StatelessWidget {
                 ]),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: Align(
                 alignment: Alignment.bottomLeft,
                 child: Row(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 50,
                       width: 300,
-                      child: const TextField(
+                      child: TextField(
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
                               borderRadius:
@@ -69,14 +65,14 @@ class StoryBox extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       width: 20,
                     ),
-                    const Icon(Icons.favorite_outline),
-                    const SizedBox(
+                    Icon(Icons.favorite_outline),
+                    SizedBox(
                       width: 20,
                     ),
-                    const Icon(Icons.send_outlined),
+                    Icon(Icons.send_outlined),
                   ],
                 ),
               ),

@@ -7,11 +7,10 @@ class StoryAvatar extends StatelessWidget {
   StoryAvatar({Key? key}) : super(key: key);
 
   final String image = "assets/images/ok.jpeg";
-  final String id = Random().nextInt(10000).toString();
+  late final String id = Random().nextInt(10000).toString();
 
   @override
   Widget build(BuildContext context) {
-    print(id);
     return Container(
       padding: const EdgeInsets.all(2),
       margin: const EdgeInsets.only(right: 15),
@@ -35,15 +34,18 @@ class StoryAvatar extends StatelessWidget {
             },
           ));
         },
-        child: Container(
-          // margin: const EdgeInsets.only(right: 15),
-          height: 85,
-          width: 85,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage(image),
+        child: Hero(
+          tag: id,
+          child: Container(
+            // margin: const EdgeInsets.only(right: 15),
+            height: 85,
+            width: 85,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(image),
+              ),
             ),
           ),
         ),
