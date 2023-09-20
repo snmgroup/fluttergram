@@ -43,7 +43,7 @@ class UserHome extends StatelessWidget {
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        return const StoryAvatar();
+                        return StoryAvatar();
                       },
                       itemCount: 5,
                     ),
