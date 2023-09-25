@@ -39,7 +39,7 @@ class StoryBox extends StatelessWidget {
                     width: 15,
                   ),
                   const Text(
-                    'mr_dog',
+                    'miss_dog',
                     style: TextStyle(
                       fontSize: 20,
                     ),
