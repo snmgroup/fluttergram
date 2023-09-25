@@ -5,7 +5,7 @@ import "utils/exporter.dart";
 
 void main() async {
   //Dev Branch
-  //This is my app
+  //This is my app - Done
   await FlutterGram.init();
   runApp(const ProviderScope(child: FlutterGramApp()));
 }
