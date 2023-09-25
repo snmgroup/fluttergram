@@ -8,4 +8,5 @@ void main() async {
   await FlutterGram.init();
   runApp(const ProviderScope(child: FlutterGramApp()));
   //This is a comment
+  // Done
 }
