@@ -7,4 +7,5 @@ void main() async {
   //Dev Branch
   await FlutterGram.init();
   runApp(const ProviderScope(child: FlutterGramApp()));
+  //This is a comment
 }
