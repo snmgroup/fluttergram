@@ -67,6 +67,7 @@ flutter:
   assets:
     - assets/images/download.png
     - assets/images/ok.jpeg
+    - assets/images/cat.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
